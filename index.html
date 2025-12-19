@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Pro - 3D Custom Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+    <div id="ui-layer">
+        <div class="stats panel">
+            <div>💰 Tiền: <span id="money">0</span>đ | ⭐ 5.0</div>
+            <div>🧼 Cốc bẩn: <span id="dirty-cups">0</span></div>
+        </div>
+        <div id="order-panel" class="panel">
+            <h3 style="margin:0 0 10px 0; color:#ffaa00">📋 ĐƠN HÀNG</h3>
+            <div id="order-scroll"></div>
+            <div class="ingred-grid">
+                <button onclick="addIngred('Cafe')">☕ Cafe</button>
+                <button onclick="addIngred('Sữa')">🥛 Sữa</button>
+                <button onclick="addIngred('Đường')">🍬 Đường</button>
+                <button onclick="addIngred('Đá')">🧊 Đá</button>
+                <button onclick="addIngred('Kem')">🍦 Kem</button>
+                <button onclick="addIngred('Matcha')">🍵 Matcha</button>
+            </div>
+            <div class="mix-display">Đang pha: <span id="current-mix">---</span></div>
+            <div class="action-btns">
+                <button onclick="clearMix()" class="btn-red">XÓA</button>
+                <button id="serve-btn" class="btn-green">PHỤC VỤ</button>
+            </div>
+        </div>
+    </div>
+    <div id="game-canvas"></div>
+    <script src="script.js"></script>
+</body>
+</html>

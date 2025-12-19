@@ -1,0 +1,15 @@
+body { margin: 0; overflow: hidden; font-family: 'Segoe UI', sans-serif; background: #111; }
+#ui-layer { position: absolute; top: 10px; left: 10px; z-index: 100; pointer-events: none; width: 280px; }
+.panel {
+    pointer-events: auto; background: rgba(20, 20, 20, 0.9);
+    color: white; padding: 15px; margin-bottom: 8px;
+    border-radius: 12px; border: 1px solid #444;
+}
+#order-scroll { max-height: 150px; overflow-y: auto; margin-bottom: 10px; }
+.order-item { background: #222; padding: 8px; margin-bottom: 6px; border-left: 4px solid #666; font-size: 13px; border-radius: 4px; }
+.order-item.active { border-left-color: #4caf50; background: #1a2e1a; }
+.ingred-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+button { padding: 10px; border-radius: 6px; border: none; cursor: pointer; background: #333; color: white; font-weight: bold; }
+.btn-red { background: #833; }
+.btn-green { background: #383; width: 100%; margin-top: 5px; }
+.mix-display { background: #000; padding: 10px; margin: 10px 0; border-radius: 6px; color: #4caf50; font-family: monospace; }
